@@ -45,7 +45,7 @@ class DatabaseHelper:
     except OperationalError as err:
       logger.info(f'Connection unsuccessful: {err}')
     except DatabaseError as err:
-      logger.info(f'Database erro occured: {err}')
+      logger.info(f'Database error occured: {err}')
       conn.rollback()
     except Exception as err:
       logger.info(f'Unexpected error occured: {err}')
